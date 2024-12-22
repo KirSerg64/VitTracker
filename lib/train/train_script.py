@@ -11,7 +11,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 from .base_functions import *
 # network related
 from lib.models.ostrack import build_ostrack, build_small_ostrack
-from lib.models.efficientvit import build_efficienttrack
+# from lib.models.efficientvit import build_efficienttrack
 from lib.models.vit_dist import build_ostrack_dist
 # from lib.models.HiT import build_hit
 from lib.models.vittrack import build_vittrack
@@ -80,7 +80,8 @@ def run(settings):
     elif settings.script_name == "vt":
         net = build_ostrack_dist(cfg, depth=12, mode='eval')
     elif settings.script_name == "efficienttrack":
-        net = build_efficienttrack(cfg, mode="train")
+        pass
+        # net = build_efficienttrack(cfg, mode="train")
     elif settings.script_name == "vittrack":
         pass
     else:

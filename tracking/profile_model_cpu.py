@@ -105,14 +105,15 @@ if __name__ == "__main__":
         search = torch.randn(bs, 3, x_sz, x_sz)
         evaluate_vit(model, template, search)
     elif args.script == 'efficienttrack':
-        from lib.models.efficientvit.efficientvit import replace_batchnorm
-        model_module = importlib.import_module('lib.models')
-        model_constructor = model_module.build_efficienttrack
-        model = model_constructor(cfg)
-        model.eval()
-        replace_batchnorm(model)
-        template = torch.randn(bs, 3, z_sz, z_sz)
-        search = torch.randn(bs, 3, x_sz, x_sz)
-        evaluate_vit(model, template, search)
+        pass
+        # from lib.models.efficientvit.efficientvit import replace_batchnorm
+        # model_module = importlib.import_module('lib.models')
+        # model_constructor = model_module.build_efficienttrack
+        # model = model_constructor(cfg)
+        # model.eval()
+        # replace_batchnorm(model)
+        # template = torch.randn(bs, 3, z_sz, z_sz)
+        # search = torch.randn(bs, 3, x_sz, x_sz)
+        # evaluate_vit(model, template, search)
     else:
         raise NotImplementedError
