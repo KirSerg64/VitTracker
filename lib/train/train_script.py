@@ -14,8 +14,8 @@ from lib.models.ostrack import build_ostrack, build_small_ostrack
 # from lib.models.efficientvit import build_efficienttrack
 from lib.models.vit_dist import build_ostrack_dist
 # from lib.models.HiT import build_hit
-from lib.models.vittrack import build_vittrack
-from lib.models.mae.vit import mae_vit_l
+# from lib.models.vittrack import build_vittrack
+# from lib.models.mae.vit import mae_vit_l
 # forward propagation related
 from lib.train.actors import OSTrackActor, HiTActor
 from lib.train.actors import OSTrackDistillationActor
