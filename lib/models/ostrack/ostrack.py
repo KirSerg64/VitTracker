@@ -16,7 +16,7 @@ from lib.utils.box_ops import box_xyxy_to_cxcywh
 from lib.models.ostrack.draw import Draw, Color, DrawMask, ExtraTemplateMask
 from lib.models.ostrack.embedding import Embedding, SearchEmbedding
 from lib.models.ostrack.preprocess import build_preprocess
-from lib.models.ostrack.clipvit import clipvittracking_base_patch16
+# from lib.models.ostrack.clipvit import clipvittracking_base_patch16
 
 
 class OSTrack(nn.Module):
@@ -198,10 +198,11 @@ def build_ostrack(cfg, training=True):
         patch_start_index = 1
 
     elif cfg.MODEL.BACKBONE.TYPE == 'clipvittracking_base_patch16':
-        pretrained = os.path.join(pretrained_path, cfg.MODEL.PRETRAIN_FILE)
-        backbone = clipvittracking_base_patch16(pretrained, search_size=256, template_size=128)
-        hidden_dim = backbone.embed_dim
-        patch_start_index = 1
+        pass
+        # pretrained = os.path.join(pretrained_path, cfg.MODEL.PRETRAIN_FILE)
+        # backbone = clipvittracking_base_patch16(pretrained, search_size=256, template_size=128)
+        # hidden_dim = backbone.embed_dim
+        # patch_start_index = 1
     else:
         raise NotImplementedError
 

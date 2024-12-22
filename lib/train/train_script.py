@@ -24,7 +24,7 @@ from lib.train.actors import VtActor
 CenterActor = VtActor
 # for import modules
 import importlib
-from lib.models.vt.clipvit import clipvittracking_base_patch16
+# from lib.models.vt.clipvit import clipvittracking_base_patch16
 
 from ..utils.focal_loss import FocalLoss
 
