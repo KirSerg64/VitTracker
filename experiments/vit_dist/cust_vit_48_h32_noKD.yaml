@@ -29,7 +29,7 @@ DATA:
   TRAIN:
     DATASETS_NAME:
     - small_LaSOT
-   DATASETS_RATIO:
+    DATASETS_RATIO:
     - 1
     SAMPLE_PER_EPOCH: 60000
   VAL:
