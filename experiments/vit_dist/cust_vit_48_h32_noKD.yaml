@@ -41,8 +41,8 @@ DATA:
     - 1
     SAMPLE_PER_EPOCH: 10000
 MODEL:
-  PRETRAIN_FILE: "/kaggle/input/mae_pretrain_vit_base/pytorch/default/1/mae_pretrain_vit_base.pth"
-  # PRETRAIN_FILE: ""
+  # PRETRAIN_FILE: "/kaggle/input/mae_pretrain_vit_base/pytorch/default/1/mae_pretrain_vit_base.pth"
+  PRETRAIN_FILE: ""
   EXTRA_MERGER: False
   RETURN_INTER: False
   BACKBONE:
