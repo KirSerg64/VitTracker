@@ -28,14 +28,14 @@ DATA:
 
   TRAIN:
     DATASETS_NAME:
-    - LASOT
+    - small_LaSOT
    DATASETS_RATIO:
     - 1
     SAMPLE_PER_EPOCH: 60000
   VAL:
     DATASETS_NAME:
 #    - GOT10K_official_val
-    - GOT10K_votval
+    - small_LaSOT
 #    - COCO17
     DATASETS_RATIO:
     - 1
