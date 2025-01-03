@@ -28,21 +28,21 @@ DATA:
 
   TRAIN:
     DATASETS_NAME:
-    - small_LaSOT
+    - LASOT
     DATASETS_RATIO:
     - 1
-    SAMPLE_PER_EPOCH: 60000
+    SAMPLE_PER_EPOCH: 2000
   VAL:
     DATASETS_NAME:
 #    - GOT10K_official_val
-    - small_LaSOT
+    - LASOT
 #    - COCO17
     DATASETS_RATIO:
     - 1
-    SAMPLE_PER_EPOCH: 10000
+    SAMPLE_PER_EPOCH: 1000
 MODEL:
   # PRETRAIN_FILE: "/kaggle/input/mae_pretrain_vit_base/pytorch/default/1/mae_pretrain_vit_base.pth"
-  PRETRAIN_FILE: ""
+  PRETRAIN_FILE: "/kaggle/input/ostrackdist_ep0300/pytorch/default/1/OstrackDist_ep0300.pth.tar"
   EXTRA_MERGER: False
   RETURN_INTER: False
   BACKBONE:
